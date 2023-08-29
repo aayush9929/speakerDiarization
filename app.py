@@ -143,11 +143,11 @@ def extract_speakers_speech_m4a(internal=False,req=None,return_embedding=False):
 # def extract_speakers_speech_m4a_body_embedding():
 #     return extract_speakers_speech_m4a_body(return_embedding=True)
 
-@app.route('/speech-to-text/embedding-whisper-pyannote-service-m4a',methods = ['POST'])
+@app.route('/diarization-transcription-embedding',methods = ['POST'])
 def extract_speakers_speech_m4a_embedding():
     return extract_speakers_speech_m4a(return_embedding=True)
 
-@app.route('/speech-to-text/get-matching-id',methods = ['POST'])
+@app.route('/speech-to-text/speaker-comparison',methods = ['POST'])
 def get_matching_embedding():
     embd_list = request.json['embeddings']
     embd = request.json['embedding']
