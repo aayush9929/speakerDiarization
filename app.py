@@ -7,9 +7,9 @@ import whisper
 import time
 import shutil
 import base64
-from utils.SaveFile import *
-from utils.AudioOps import *
-from utils.EmbeddingOps import *
+from .utils.SaveFile import *
+from .utils.AudioOps import *
+from .utils.EmbeddingOps import *
 import logging
 import json
 import torch
