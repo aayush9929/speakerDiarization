@@ -1,0 +1,9 @@
+/speech-to-text/pyannote-service
+/speech-to-text/whisper-service
+/speech-to-text/whisper-pyannote-service-m4a
+/speech-to-text/whisper-pyannote-service-m4a-body
+/speech-to-text/whisper-pyannote-service
+/speech-to-text/embedding-whisper-pyannote-service
+/speech-to-text/embedding-whisper-pyannote-service-m4a-body
+/speech-to-text/embedding-whisper-pyannote-service-m4a
+/speech-to-text/get-matching-id

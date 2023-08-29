@@ -1,0 +1,6 @@
+flask==2.3.2
+develop.zip
+openai-whisper==20230314
+pyannote.audio==2.1.1
+pydub==0.25.1
+gunicorn==20.1.0

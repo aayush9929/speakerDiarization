@@ -1,0 +1,204 @@
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /pyannote/speaker-diarization/resolve/2.1/config.yaml HTTP/1.1" 200 0
+WARNING:speechbrain.utils.torch_audio_backend:The torchaudio backend is switched to 'soundfile'. Note that 'sox_io' is not supported on Windows.
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for _speechbrain_save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for _speechbrain_load
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for load
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for load_if_possible
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for _save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for _recover
+WARNING:speechbrain.utils.train_logger:torchvision is not available - cannot save figures
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for _save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for _recover
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for load
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for load
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for load
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for load
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for load
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for load
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for load
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for load
+WARNING:speechbrain.utils.torch_audio_backend:The torchaudio backend is switched to 'soundfile'. Note that 'sox_io' is not supported on Windows.
+DEBUG:matplotlib:CACHEDIR=C:\Users\user\.matplotlib
+DEBUG:matplotlib.font_manager:Using fontManager instance from C:\Users\user\.matplotlib\fontlist-v330.json
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /pyannote/segmentation/resolve/2022.07/pytorch_model.bin HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /pyannote/segmentation/resolve/2022.07/config.yaml HTTP/1.1" 200 0
+DEBUG:fsspec.local:open file: C:/Users/user/.cache/torch/pyannote/models--pyannote--segmentation/snapshots/c4c8ceafcbb3a7a280c2d357aee9fbc9b0be7f9b/pytorch_model.bin
+DEBUG:fsspec.local:open file: C:/Users/user/.cache/torch/pyannote/models--pyannote--segmentation/snapshots/c4c8ceafcbb3a7a280c2d357aee9fbc9b0be7f9b/pytorch_model.bin
+INFO:speechbrain.pretrained.fetching:Fetch hyperparams.yaml: Using existing file/symlink in C:\Users\user\.cache\torch\pyannote\speechbrain\hyperparams.yaml.
+INFO:speechbrain.pretrained.fetching:Fetch custom.py: Delegating to Huggingface hub, source speechbrain/spkrec-ecapa-voxceleb.
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /speechbrain/spkrec-ecapa-voxceleb/resolve/main/custom.py HTTP/1.1" 404 0
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for _save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for _load
+DEBUG:speechbrain.utils.checkpoints:Registered parameter transfer hook for _load
+DEBUG:speechbrain.utils.parameter_transfer:Collecting files (or symlinks) for pretraining in C:\Users\user\.cache\torch\pyannote\speechbrain.
+INFO:speechbrain.pretrained.fetching:Fetch embedding_model.ckpt: Using existing file/symlink in C:\Users\user\.cache\torch\pyannote\speechbrain\embedding_model.ckpt.
+INFO:speechbrain.pretrained.fetching:Fetch mean_var_norm_emb.ckpt: Using existing file/symlink in C:\Users\user\.cache\torch\pyannote\speechbrain\mean_var_norm_emb.ckpt.
+INFO:speechbrain.pretrained.fetching:Fetch classifier.ckpt: Using existing file/symlink in C:\Users\user\.cache\torch\pyannote\speechbrain\classifier.ckpt.
+INFO:speechbrain.pretrained.fetching:Fetch label_encoder.txt: Using existing file/symlink in C:\Users\user\.cache\torch\pyannote\speechbrain\label_encoder.ckpt.
+INFO:speechbrain.utils.parameter_transfer:Loading pretrained files for: embedding_model, mean_var_norm_emb, classifier, label_encoder
+DEBUG:speechbrain.dataio.encoder:Loaded categorical encoding from C:\Users\user\.cache\torch\pyannote\speechbrain\label_encoder.ckpt
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.99.89:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:app:debug log info
+INFO:app:Info log information
+WARNING:app:Warning log info
+ERROR:app:Error log info
+CRITICAL:app:Critical log info
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2023 11:12:08] "POST /test_api HTTP/1.1" 200 -
+DEBUG:app:debug log info
+INFO:app:Info log information
+WARNING:app:Warning log info
+ERROR:app:Error log info
+CRITICAL:app:Critical log info
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2023 11:12:20] "POST /test_api HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /pyannote/speaker-diarization/resolve/2.1/config.yaml HTTP/1.1" 200 0
+WARNING:speechbrain.utils.torch_audio_backend:The torchaudio backend is switched to 'soundfile'. Note that 'sox_io' is not supported on Windows.
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for _speechbrain_save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for _speechbrain_load
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for load
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for load_if_possible
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for _save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for _recover
+WARNING:speechbrain.utils.train_logger:torchvision is not available - cannot save figures
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for _save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for _recover
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for load
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for load
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for load
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for load
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for load
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for load
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for load
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for load
+WARNING:speechbrain.utils.torch_audio_backend:The torchaudio backend is switched to 'soundfile'. Note that 'sox_io' is not supported on Windows.
+DEBUG:matplotlib:CACHEDIR=C:\Users\user\.matplotlib
+DEBUG:matplotlib.font_manager:Using fontManager instance from C:\Users\user\.matplotlib\fontlist-v330.json
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /pyannote/segmentation/resolve/2022.07/pytorch_model.bin HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /pyannote/segmentation/resolve/2022.07/config.yaml HTTP/1.1" 200 0
+DEBUG:fsspec.local:open file: C:/Users/user/.cache/torch/pyannote/models--pyannote--segmentation/snapshots/c4c8ceafcbb3a7a280c2d357aee9fbc9b0be7f9b/pytorch_model.bin
+DEBUG:fsspec.local:open file: C:/Users/user/.cache/torch/pyannote/models--pyannote--segmentation/snapshots/c4c8ceafcbb3a7a280c2d357aee9fbc9b0be7f9b/pytorch_model.bin
+INFO:speechbrain.pretrained.fetching:Fetch hyperparams.yaml: Using existing file/symlink in C:\Users\user\.cache\torch\pyannote\speechbrain\hyperparams.yaml.
+INFO:speechbrain.pretrained.fetching:Fetch custom.py: Delegating to Huggingface hub, source speechbrain/spkrec-ecapa-voxceleb.
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /speechbrain/spkrec-ecapa-voxceleb/resolve/main/custom.py HTTP/1.1" 404 0
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for _save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for _load
+DEBUG:speechbrain.utils.checkpoints:Registered parameter transfer hook for _load
+DEBUG:speechbrain.utils.parameter_transfer:Collecting files (or symlinks) for pretraining in C:\Users\user\.cache\torch\pyannote\speechbrain.
+INFO:speechbrain.pretrained.fetching:Fetch embedding_model.ckpt: Using existing file/symlink in C:\Users\user\.cache\torch\pyannote\speechbrain\embedding_model.ckpt.
+INFO:speechbrain.pretrained.fetching:Fetch mean_var_norm_emb.ckpt: Using existing file/symlink in C:\Users\user\.cache\torch\pyannote\speechbrain\mean_var_norm_emb.ckpt.
+INFO:speechbrain.pretrained.fetching:Fetch classifier.ckpt: Using existing file/symlink in C:\Users\user\.cache\torch\pyannote\speechbrain\classifier.ckpt.
+INFO:speechbrain.pretrained.fetching:Fetch label_encoder.txt: Using existing file/symlink in C:\Users\user\.cache\torch\pyannote\speechbrain\label_encoder.ckpt.
+INFO:speechbrain.utils.parameter_transfer:Loading pretrained files for: embedding_model, mean_var_norm_emb, classifier, label_encoder
+DEBUG:speechbrain.dataio.encoder:Loaded categorical encoding from C:\Users\user\.cache\torch\pyannote\speechbrain\label_encoder.ckpt
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.99.89:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /pyannote/speaker-diarization/resolve/2.1/config.yaml HTTP/1.1" 200 0
+WARNING:speechbrain.utils.torch_audio_backend:The torchaudio backend is switched to 'soundfile'. Note that 'sox_io' is not supported on Windows.
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for _speechbrain_save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for _speechbrain_load
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for load
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for load_if_possible
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for _save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for _recover
+WARNING:speechbrain.utils.train_logger:torchvision is not available - cannot save figures
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for _save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for _recover
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for load
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for load
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for load
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for load
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for load
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for load
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for load
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for load
+WARNING:speechbrain.utils.torch_audio_backend:The torchaudio backend is switched to 'soundfile'. Note that 'sox_io' is not supported on Windows.
+DEBUG:matplotlib:CACHEDIR=C:\Users\user\.matplotlib
+DEBUG:matplotlib.font_manager:Using fontManager instance from C:\Users\user\.matplotlib\fontlist-v330.json
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /pyannote/segmentation/resolve/2022.07/pytorch_model.bin HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /pyannote/segmentation/resolve/2022.07/config.yaml HTTP/1.1" 200 0
+DEBUG:fsspec.local:open file: C:/Users/user/.cache/torch/pyannote/models--pyannote--segmentation/snapshots/c4c8ceafcbb3a7a280c2d357aee9fbc9b0be7f9b/pytorch_model.bin
+DEBUG:fsspec.local:open file: C:/Users/user/.cache/torch/pyannote/models--pyannote--segmentation/snapshots/c4c8ceafcbb3a7a280c2d357aee9fbc9b0be7f9b/pytorch_model.bin
+INFO:speechbrain.pretrained.fetching:Fetch hyperparams.yaml: Using existing file/symlink in C:\Users\user\.cache\torch\pyannote\speechbrain\hyperparams.yaml.
+INFO:speechbrain.pretrained.fetching:Fetch custom.py: Delegating to Huggingface hub, source speechbrain/spkrec-ecapa-voxceleb.
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /speechbrain/spkrec-ecapa-voxceleb/resolve/main/custom.py HTTP/1.1" 404 0
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint save hook for _save
+DEBUG:speechbrain.utils.checkpoints:Registered checkpoint load hook for _load
+DEBUG:speechbrain.utils.checkpoints:Registered parameter transfer hook for _load
+DEBUG:speechbrain.utils.parameter_transfer:Collecting files (or symlinks) for pretraining in C:\Users\user\.cache\torch\pyannote\speechbrain.
+INFO:speechbrain.pretrained.fetching:Fetch embedding_model.ckpt: Using existing file/symlink in C:\Users\user\.cache\torch\pyannote\speechbrain\embedding_model.ckpt.
+INFO:speechbrain.pretrained.fetching:Fetch mean_var_norm_emb.ckpt: Using existing file/symlink in C:\Users\user\.cache\torch\pyannote\speechbrain\mean_var_norm_emb.ckpt.
+INFO:speechbrain.pretrained.fetching:Fetch classifier.ckpt: Using existing file/symlink in C:\Users\user\.cache\torch\pyannote\speechbrain\classifier.ckpt.
+INFO:speechbrain.pretrained.fetching:Fetch label_encoder.txt: Using existing file/symlink in C:\Users\user\.cache\torch\pyannote\speechbrain\label_encoder.ckpt.
+INFO:speechbrain.utils.parameter_transfer:Loading pretrained files for: embedding_model, mean_var_norm_emb, classifier, label_encoder
+DEBUG:speechbrain.dataio.encoder:Loaded categorical encoding from C:\Users\user\.cache\torch\pyannote\speechbrain\label_encoder.ckpt
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 139-612-105
+DEBUG:app:debug log info
+INFO:app:Info log information
+WARNING:app:Warning log info
+ERROR:app:Error log info
+CRITICAL:app:Critical log info
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2023 11:13:10] "POST /test_api HTTP/1.1" 200 -
+DEBUG:app:debug log info
+INFO:app:Info log information
+WARNING:app:Warning log info
+ERROR:app:Error log info
+CRITICAL:app:Critical log info
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2023 11:13:26] "POST /test_api HTTP/1.1" 200 -
+DEBUG:app:debug log info
+INFO:app:Info log information
+WARNING:app:Warning log info
+ERROR:app:Error log info
+CRITICAL:app:Critical log info
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2023 11:13:33] "POST /test_api HTTP/1.1" 200 -
+DEBUG:app:debug log info
+INFO:app:Info log information
+WARNING:app:Warning log info
+ERROR:app:Error log info
+CRITICAL:app:Critical log info
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2023 11:13:54] "POST /test_api HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'H:\\Fargo\\New folder\\speakerDiarizationNew\\app.py', reloading
+INFO:werkzeug: * Restarting with stat

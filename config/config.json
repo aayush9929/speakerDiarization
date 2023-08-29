@@ -1,0 +1,6 @@
+{
+  "access_token" : "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",
+  "diarization_model_name" : "pyannote/speaker-diarization@2.1",
+  "diarization_model_type" : "base",
+  "embedding_model_name" : "speechbrain/spkrec-ecapa-voxceleb"
+}
