@@ -149,8 +149,8 @@ def extract_speakers_speech_m4a_embedding():
 
 @app.route('/speech-to-text/speaker-comparison',methods = ['POST'])
 def get_matching_embedding():
-    embd_list = request.json['embeddings']
-    embd = request.json['embedding']
+    embd_list = request.json['list_of_embeddings']
+    embd = request.json['user_embedding']
     return jsonify(getSimilarEmbedding(embd,emdb_list))
 
 def main():
