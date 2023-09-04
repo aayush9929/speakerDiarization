@@ -20,7 +20,7 @@ def getEmbeddings(GlobalVariables,filepath,audioparms):
         waveform, sample_rate = GlobalVariables.audio_config.crop(filepath, speaker)
         embedding = GlobalVariables.embedding_model(waveform[None])
         # print(embedding,type(embedding))
-        audioparm['embedding'] = json.dumps(embedding)
+        audioparm['embedding'] = str(embedding)
         print(audioparm)
         return_data.append(audioparm)
     return return_data
