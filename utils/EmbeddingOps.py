@@ -3,6 +3,7 @@ from pyannote.audio import Audio
 from pyannote.core import Segment
 from scipy.spatial.distance import cdist
 import numpy as np
+import json
 def getEmbeddings(GlobalVariables,filepath,audioparms):
     '''
     This function diarize the input audio present at filepath
@@ -19,7 +20,7 @@ def getEmbeddings(GlobalVariables,filepath,audioparms):
         waveform, sample_rate = GlobalVariables.audio_config.crop(filepath, speaker)
         embedding = GlobalVariables.embedding_model(waveform[None])
         print(embedding,type(embedding))
-        audioparm['embedding'] = str(embedding)
+        audioparm['embedding'] = json.dumps(embedding)
         return_data.append(audioparm)
     return return_data
 
