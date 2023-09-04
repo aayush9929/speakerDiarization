@@ -19,11 +19,11 @@ def getEmbeddings(GlobalVariables,filepath,audioparms):
         speaker = Segment(audioparm['time'][0], audioparm['time'][1])
         waveform, sample_rate = GlobalVariables.audio_config.crop(filepath, speaker)
         embedding = GlobalVariables.embedding_model(waveform[None])
-        print(embedding)
-        print(type(embedding))
+        # print(embedding)
+        # print(type(embedding))
         # audioparm['embedding'] = str(embedding)
-        embeddings_as_lists = [embd.tolist() for embd in embedding]
-        audioparm['embedding'] = json.dumps(embeddings_as_lists)
+        # embeddings_as_lists = [embd.tolist() for embd in embedding]
+        audioparm['embedding'] = json.dumps(embedding.tolist())
         # print(audioparm)
         return_data.append(audioparm)
     return return_data
