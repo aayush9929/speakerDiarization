@@ -23,7 +23,7 @@ def getEmbeddings(GlobalVariables,filepath,audioparms):
         # audioparm['embedding'] = str(embedding)
         embeddings_as_lists = [embd.tolist() for embd in embedding]
         audioparm['embedding'] = json.dumps(embeddings_as_lists)
-        print(audioparm)
+        # print(audioparm)
         return_data.append(audioparm)
     return return_data
 
