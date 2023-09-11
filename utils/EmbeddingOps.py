@@ -34,4 +34,6 @@ def getSimilarEmbedding(src_embedding,embedding_list,threshold=0.1):
     distance_list = cdist([src_embedding], embedding_list, metric="cosine")
     # distance_list.append(distance)
     print(distance_list)
-    return 0 #distance_list.index(min(distance_list[0]))
+    distance_list = distance_list.tolist()[0]
+    # min_index = np.where(distance_list == min(distance_list[0]))
+    return distance_list.index(min(distance_list))
