@@ -151,7 +151,7 @@ def extract_speakers_speech_m4a_embedding():
 def get_matching_embedding():
     embd_list = request.json['list_of_embeddings']
     embd = request.json['user_embedding']
-    return jsonify(getSimilarEmbedding(embd,emdb_list))
+    return jsonify(getSimilarEmbedding(embd,embd_list))
 
 def main():
     # global pipeline
