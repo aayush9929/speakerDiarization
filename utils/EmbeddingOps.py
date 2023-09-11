@@ -29,8 +29,8 @@ def getEmbeddings(GlobalVariables,filepath,audioparms):
     return return_data
 
 def getSimilarEmbedding(src_embedding,embedding_list,threshold=0.1):
-    distance_list = []
-    for embedding in embedding_list:
-        distance = cdist(src_embedding, embedding, metric="cosine")
-        distance_list.append(distance)
-    return distance_list.index(min(distance_list))
+    # distance_list = []
+    # for embedding in embedding_list:
+    distance_list = cdist(src_embedding, embedding, metric="cosine")
+    # distance_list.append(distance)
+    return distance_list.index(min(distance_list[0]))
