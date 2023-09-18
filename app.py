@@ -111,7 +111,7 @@ def extract_speakers_speech_m4a_body(internal=False,req=None,return_embedding=Fa
         return_data = extract_text(GlobalVariables,diarized_data,output_file_path_i,audio_output_folder)
         if return_embedding == True:
             return_data = getEmbeddings(GlobalVariables,output_file_path_i,return_data)
-        shutil.rmtree(audio_output_folder)
+        # shutil.rmtree(audio_output_folder)
         return jsonify(return_data)
     except Exception as e:
         print(e)
