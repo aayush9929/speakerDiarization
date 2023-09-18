@@ -144,7 +144,7 @@ def extract_speakers_speech_m4a_body(internal=False,req=None,return_embedding=Fa
 #     return extract_speakers_speech_m4a_body(return_embedding=True)
 
 @app.route('/diarization-transcription-embedding-binary',methods = ['POST'])
-def extract_speakers_speech_m4a_embedding():
+def extract_speakers_speech_m4a_embedding_binary():
     return extract_speakers_speech_m4a_body(return_embedding=True)
 
 @app.route('/diarization-transcription-embedding',methods = ['POST'])
