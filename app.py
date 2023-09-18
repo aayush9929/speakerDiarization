@@ -100,6 +100,7 @@ def extract_speakers_speech_m4a(internal=False,req=None,return_embedding=False):
 def extract_speakers_speech_m4a_body(internal=False,req=None,return_embedding=False):
     try:
         initializeGlobalVars()
+        print(request.json['audio'])
         audio_file = request.json['audio'].read()
         print(audio_file)
         app.logger.info(f'Type of audio file recieved {type(audio_file)}')
