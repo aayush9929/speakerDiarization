@@ -102,7 +102,7 @@ def extract_speakers_speech_m4a_body(internal=False,req=None,return_embedding=Fa
         initializeGlobalVars()
         print(request.json['audio'])
         audio_file = request.json['audio']
-        print(audio_file)
+        # print(audio_file)
         app.logger.info(f'Type of audio file recieved {type(audio_file)}')
         audio_output_folder = str(round(time.time()))
         os.mkdir(audio_output_folder)
