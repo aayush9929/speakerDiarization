@@ -101,7 +101,7 @@ def extract_speakers_speech_m4a(internal=False,req=None,return_embedding=False):
 def extract_speakers_speech_m4a_body(internal=False,req=None,return_embedding=False):
     try:
         initializeGlobalVars()
-        print(request.json['audio'])
+        # print(request.json['audio'])
         audio_file = request.json['audio']
         # print(audio_file)
         app.logger.info(f'Type of audio file recieved {type(audio_file)}')
@@ -161,16 +161,16 @@ def get_matching_embedding():
     embd = request.json['user_embedding']
     return jsonify(getSimilarEmbedding(embd,embd_list))
 
-@app.route('/speech-to-text/save-buffer',methods=['POST'])
-def save_buffer():
-    print(f'request files are {request.files}')
-    print(f'request is {request}')
-    audio_buffer =  request.files['audioFile']
-    output_file = 'output.mp4'
-    audio_clip = AudioFileClip(buffer=audio_buffer, fps=44100)  # Adjust the FPS as needed
-    audio_clip.write_videofile(output_file, codec='libx264', audio_codec='aac')
-    audio_clip.close()
-    return '200'
+# @app.route('/speech-to-text/save-buffer',methods=['POST'])
+# def save_buffer():
+#     print(f'request files are {request.files}')
+#     print(f'request is {request}')
+#     audio_buffer =  request.files['audioFile']
+#     output_file = 'output.mp4'
+#     audio_clip = AudioFileClip(buffer=audio_buffer, fps=44100)  # Adjust the FPS as needed
+#     audio_clip.write_videofile(output_file, codec='libx264', audio_codec='aac')
+#     audio_clip.close()
+#     return '200'
 
 def main():
     # global pipeline
