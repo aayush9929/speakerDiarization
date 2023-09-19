@@ -164,6 +164,7 @@ def get_matching_embedding():
 @app.route('/speech-to-text/save-buffer',methods=['POST'])
 def save_buffer():
     print(f'request files are {request.files}')
+    print(f'request is {request}')
     audio_buffer =  request.files['audioFile']
     output_file = 'output.mp4'
     audio_clip = AudioFileClip(buffer=audio_buffer, fps=44100)  # Adjust the FPS as needed
