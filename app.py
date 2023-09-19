@@ -14,6 +14,7 @@ import logging
 import json
 import torch
 from pyannote.audio.pipelines.speaker_verification import PretrainedSpeakerEmbedding
+from moviepy.editor import AudioFileClip
 
 logging.basicConfig(level=logging.INFO,format='%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
 app = Flask(__name__)
@@ -159,6 +160,16 @@ def get_matching_embedding():
     embd_list = request.json['list_of_embeddings']
     embd = request.json['user_embedding']
     return jsonify(getSimilarEmbedding(embd,embd_list))
+
+@app.route('/speech-to-text/save-buffer',methods=['POST'])
+def save_buffer():
+    print(f'request files are {request.files}')
+    audio_buffer =  request.files['audioFile']
+    output_file = 'output.mp4'
+    audio_clip = AudioFileClip(buffer=audio_buffer, fps=44100)  # Adjust the FPS as needed
+    audio_clip.write_videofile(output_file, codec='libx264', audio_codec='aac')
+    audio_clip.close()
+    return '200'
 
 def main():
     # global pipeline
