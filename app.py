@@ -120,7 +120,7 @@ def extract_speakers_speech_m4a_body(internal=False,req=None,return_embedding=Fa
             shutil.rmtree(audio_output_folder)
 
 @app.route('/speech-to-text/embedding-service-m4a-body',methods = ['POST'])
-def embedding_service_m4a_body(internal=False,req=None,return_embedding=False):
+def embedding_service_m4a_body():
     try:
         initializeGlobalVars()
         audio_file = request.json['audio']
@@ -138,8 +138,8 @@ def embedding_service_m4a_body(internal=False,req=None,return_embedding=False):
         output_file_path_i = save_m4a_audio_file_base64(audio_file,audio_output_folder)
         # diarized_data = diarizeAudio(GlobalVariables,output_file_path_i)
         # return_data = extract_text(GlobalVariables,diarized_data,output_file_path_i,audio_output_folder)
-        if return_embedding == True:
-            return_data = getEmbeddings(GlobalVariables,output_file_path_i,return_data)
+        # if return_embedding == True:
+        return_data = getEmbeddings(GlobalVariables,output_file_path_i,return_data)
         # shutil.rmtree(audio_output_folder)
         return jsonify(return_data)
     except Exception as e:
