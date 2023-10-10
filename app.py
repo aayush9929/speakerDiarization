@@ -119,6 +119,35 @@ def extract_speakers_speech_m4a_body(internal=False,req=None,return_embedding=Fa
         if os.path.exists(audio_output_folder):
             shutil.rmtree(audio_output_folder)
 
+@app.route('/speech-to-text/embedding-service-m4a-body',methods = ['POST'])
+def embedding_service_m4a_body(internal=False,req=None,return_embedding=False):
+    try:
+        initializeGlobalVars()
+        audio_file = request.json['audio']
+        start_time = request.json['start']
+        end_time = request.json['end']
+        # converting the input into the required format
+        return_data = [
+            {
+            'time' : [start_time,end_time]
+            }
+        ]
+        app.logger.info(f'Type of audio file recieved {type(audio_file)}')
+        audio_output_folder = str(round(time.time()))
+        os.mkdir(audio_output_folder)
+        output_file_path_i = save_m4a_audio_file_base64(audio_file,audio_output_folder)
+        # diarized_data = diarizeAudio(GlobalVariables,output_file_path_i)
+        # return_data = extract_text(GlobalVariables,diarized_data,output_file_path_i,audio_output_folder)
+        if return_embedding == True:
+            return_data = getEmbeddings(GlobalVariables,output_file_path_i,return_data)
+        # shutil.rmtree(audio_output_folder)
+        return jsonify(return_data)
+    except Exception as e:
+        print(e)
+        if os.path.exists(audio_output_folder):
+            shutil.rmtree(audio_output_folder)
+
+
 # @app.route('/speech-to-text/whisper-pyannote-service',methods = ['POST'])
 # def extract_speakers_speech(internal=False,req=None,return_embedding=False):
 #     try:
