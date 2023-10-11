@@ -135,7 +135,7 @@ def embedding_service_m4a_body():
         app.logger.info(f'Type of audio file recieved {type(audio_file)}')
         audio_output_folder = str(round(time.time()))
         os.mkdir(audio_output_folder)
-        output_file_path_i = save_m4a_audio_file_base64(audio_file,audio_output_folder)
+        output_file_path_i = save_mp3_audio_file_base64(audio_file,audio_output_folder)
         # diarized_data = diarizeAudio(GlobalVariables,output_file_path_i)
         # return_data = extract_text(GlobalVariables,diarized_data,output_file_path_i,audio_output_folder)
         # if return_embedding == True:
