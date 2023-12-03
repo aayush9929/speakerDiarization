@@ -42,6 +42,8 @@ def extract_text(GlobalVariables,timedetails,filepath,outputfolder):
         spkr = timedetail[0] #['speaker'][idx]
         start = timedetail[1] #['start'][idx]
         end = timedetail[2] #['end'][idx]
+        if start >= end:
+            continue
         segment = audio[start*1000:end*1000]
         output_file_path_i = f"{outputfolder}/tmp_file_{idx}.wav"
         segment.export(output_file_path_i, format='wav')
