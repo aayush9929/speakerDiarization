@@ -1,5 +1,4 @@
 flask==2.3.2
-develop.zip
 openai-whisper==20231117
 pyannote.audio==3.1.1
 pydub==0.25.1
